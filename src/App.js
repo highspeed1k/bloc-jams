@@ -13,8 +13,8 @@ class App extends Component {
         <header>
          <nav>
            <Link to='/'>Landing</Link>
-           <Link to='/library'>Library</Link>
-           
+           <Link to='/library'>Libraryy</Link>
+
          </nav>
            <h1>Bloc Jams</h1>
         </header>
