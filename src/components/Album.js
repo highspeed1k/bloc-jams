@@ -12,6 +12,7 @@ import albumData from './../data/albums';
         });
 
         this.state = {
+<<<<<<< HEAD
           album: album,
           currentSong: album.songs[0],
           isPlaying: false
@@ -46,6 +47,11 @@ import albumData from './../data/albums';
         }
       }
 
+=======
+          album: album
+          };
+        }
+>>>>>>> Album-checkpoint
 
         render() {
           return (
@@ -65,6 +71,7 @@ import albumData from './../data/albums';
                     <col id="song-title-column" />
                     <col id="song-duration-column" />
                     </colgroup>
+<<<<<<< HEAD
 
                     <tbody>
                     {this.state.album.songs.map( (song, index) =>(
@@ -75,6 +82,10 @@ import albumData from './../data/albums';
                     				</tr>
                     			))}
                     			</tbody>
+=======
+                    <tbody>
+                    </tbody>
+>>>>>>> Album-checkpoint
                     </table>
                  </section>
           );
