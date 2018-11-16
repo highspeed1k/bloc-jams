@@ -4,6 +4,7 @@ import albumData from './../data/albums';
 
 
 
+
     class Album extends Component {
       constructor(props) {
         super(props);
@@ -99,7 +100,7 @@ import albumData from './../data/albums';
                              <td>
 			                         {this.handleHover( song, index)}
 			                       </td>
-                            
+
                     				<td>{song.title}</td>
                     				<td>{song.duration}</td>
                     				</tr>
