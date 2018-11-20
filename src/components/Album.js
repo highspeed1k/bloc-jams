@@ -63,9 +63,11 @@ import albumData from './../data/albums';
 	          const isSameSong = this.state.currentSong === song;
 	           if (this.state.isPlaying && isSameSong) {
 		             return <span className='ion-pause'></span>;
-	          } else if (!this.state.isPlaying && isSameSong) {
-		             return <span className='ion-play'></span>;
-	          } else if (this.state.isHovered === index) {
+	          }
+            //else if (!this.state.isPlaying && isSameSong) {
+		          //return <span className='ion-play'></span>;
+	          //}
+            else if (this.state.isHovered === index) {
 		            return <span className='ion-play'></span>;
 	         } else {
 		           return songNumber;
@@ -95,11 +97,11 @@ import albumData from './../data/albums';
 
                     <tbody>
                     {this.state.album.songs.map( (song, index) =>(
-                            <tr className="song" key={index} onClick={() => this.handleSongClick(song)} onMouseEnter={() => this.handleMouseEnter(index)} handleMouseLeave={() => this.handleMouseLeave(index)}>
+                            <tr className="song" key={index} onClick={() => this.handleSongClick(song)} onMouseEnter={() => this.handleMouseEnter(index)} handlemouseleave={() => this.handlemouseleave(index)}>
                              <td>
 			                         {this.handleHover( song, index)}
 			                       </td>
-                            
+
                     				<td>{song.title}</td>
                     				<td>{song.duration}</td>
                     				</tr>
